@@ -17,7 +17,7 @@
   },
   "keywords": [],
   "dependencies": {
-    "@expressots/adapter-express": "latest",
+    "@expressots/adapter-express": "^1.8.1",
     "@expressots/core": "^2.16.1",
     "@prisma/client": "^5.19.0",
     "dotenv": "16.4.5",

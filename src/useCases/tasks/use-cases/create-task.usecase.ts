@@ -1,6 +1,5 @@
 import { provide, Report, StatusCode } from "@expressots/core";
 import { TaskRepository } from "../repositories/task.repository";
-import { TasksEntity } from "@useCases/tasks/entities/tasks.entity";
 import { TaskCreateRequestDTO } from "../dtos/create-task.dto";
 
 @provide(CreateTaskUseCase)

@@ -1,4 +1,4 @@
-import { body, controller, Http, Post } from "@expressots/adapter-express";
+import { body, controller, Post } from "@expressots/adapter-express";
 import { TaskCreateRequestDTO } from "../dtos/create-task.dto";
 import { CreateTaskUseCase } from "../use-cases/create-task.usecase";
 
