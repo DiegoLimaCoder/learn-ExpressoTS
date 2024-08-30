@@ -16,7 +16,6 @@ export class TaskRepository extends BaseRepository<TaskEntity> {
 
     async findAllTask(): Promise<TaskEntity[]> {
         const task = await this.prismaProvider.prisma.task.findMany();
-
         return task;
     }
 
@@ -31,6 +30,18 @@ export class TaskRepository extends BaseRepository<TaskEntity> {
         const task = await this.prismaProvider.prisma.task.delete({
             where: {
                 id: id,
+            },
+        });
+        return task;
+    }
+
+    async editTask(id: string, data: TaskCreateRequestDTO) {
+        const task = await this.prismaProvider.prisma.task.update({
+            where: {
+                id,
+            },
+            data: {
+                ...data,
             },
         });
 

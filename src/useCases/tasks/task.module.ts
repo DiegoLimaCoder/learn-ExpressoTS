@@ -8,6 +8,8 @@ import { FindByIdController } from "./controllers/find-by-id.controller";
 import { FindByIdUseCase } from "./use-cases/find-by-id.usecase";
 import { DeleteTaskController } from "./controllers/delete-task.controller";
 import { DeleteTaskUseCase } from "./use-cases/delete-task.usecase";
+import { EditTaskController } from "./controllers/edit-task.controller";
+import { EditTaskUseCase } from "./use-cases/edit-task.usecase";
 
 export const TaskModule: ContainerModule = CreateModule([
     // Create
@@ -22,7 +24,11 @@ export const TaskModule: ContainerModule = CreateModule([
     FindByIdController,
     FindByIdUseCase,
 
-    //Delele Task
+    //Delele
     DeleteTaskController,
     DeleteTaskUseCase,
+
+    // Edit
+    EditTaskController,
+    EditTaskUseCase,
 ]);
